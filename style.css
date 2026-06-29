@@ -1,0 +1,78 @@
+/* General font */
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero section background */
+.hero-bg {
+    background-color: #FFEBF0;
+}
+
+/* Container border */
+.container-border {
+    border: 2px solid rgba(255, 59, 93, 0.2);
+    box-shadow: 0 0 40px rgba(255, 59, 93, 0.1);
+}
+
+/* Stylized underline */
+.stylized-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 30px;
+}
+.stylized-underline svg {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 25px;
+}
+
+/* Feature illustrations */
+.feature-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+}
+
+/* Hero image circles */
+.circle-bg.big {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle at center, #ffb6c1 0%, #ffe0e9 60%, #ffffff 100%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(4px);
+    z-index: 1;
+    opacity: 1;
+}
+.circle-bg.small {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle at center, #ffc9d9 0%, #fff0f5 70%, transparent 100%);
+    border-radius: 50%;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    filter: blur(2px);
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Hero image */
+.hero-image-container img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .top-72 { top: 60%; left: 50% !important; transform: translate(-50%, -50%); }
+    .bottom-12 { bottom: 5%; right: 50%; transform: translateX(50%); }
+}
